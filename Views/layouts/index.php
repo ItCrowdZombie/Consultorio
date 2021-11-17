@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>Lista de citas</h1>
-<section id="SectionCitas">
+<section id="SectionCitas" class='row justify-content-center'>
 <div class="card w-50">
   <div class="card-body">
     <h5 class="card-title">Nombre</h5>
