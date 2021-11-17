@@ -37,9 +37,9 @@
 
 </form>
 <section class="text-left">
-    <button type="submit" class="btn btn-primary">Enviar</button>
-    <button type="submit" class="btn btn-warning">Cancelar y volver</button>
-    <button type="reset" class="btn btn-danger">Borrar</button>
+    <button id="send" type="submit" class="btn btn-primary">Enviar</button>
+    <button id="cancel" type="submit" class="btn btn-warning">Cancelar y volver</button>
+    <button id="delete" type="reset" class="btn btn-danger">Borrar</button>
 </section>
 </body>
 </html>
