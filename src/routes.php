@@ -1,6 +1,6 @@
 <?php
 
-var_dump ($_POST);
+
 $uri = $_SERVER["REQUEST_URI"];
 
 // if ($uri == '/'){

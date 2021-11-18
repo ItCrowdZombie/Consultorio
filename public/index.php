@@ -18,8 +18,8 @@ $nombre =$_POST["inputName"];
 $equipo=$_POST["inputEquipo"];
 $tema=$_POST["inputTema"];
 $description=$_POST["inputDescription"];
-
-echo $nombre;
+$cita = new Cita($nombre,$equipo,$tema,$description);
+array_push($listaCitas, $cita);
 
 foreach ($listaCitas as $cita) {
   echo "<section id='SectionCitas' class='row justify-content-center'>
