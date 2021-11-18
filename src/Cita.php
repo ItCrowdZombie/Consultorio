@@ -40,8 +40,6 @@ class Cita {
     public function setDescripcion($value){
         $this->descripción = $value;
     }
-    
-
 }
 
 

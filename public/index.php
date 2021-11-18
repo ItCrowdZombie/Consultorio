@@ -11,9 +11,16 @@
 <h1>Lista de citas</h1>
 <?php
 
-
+require_once '/xampp/htdocs/Consultorio/src/routes.php';
 require_once '/xampp/htdocs/Consultorio/src/cita.php';
 require_once '/xampp/htdocs/Consultorio/src/citaList.php';
+$nombre =$_POST["inputName"];
+$equipo=$_POST["inputEquipo"];
+$tema=$_POST["inputTema"];
+$description=$_POST["inputDescription"];
+
+echo $nombre;
+
 foreach ($listaCitas as $cita) {
   echo "<section id='SectionCitas' class='row justify-content-center'>
         <div class='card w-50'>
@@ -25,7 +32,7 @@ foreach ($listaCitas as $cita) {
           </div>
         </div>
         </section>";
-}
+};
 ?>
 
    

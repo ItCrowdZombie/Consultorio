@@ -6,5 +6,4 @@ require_once __DIR__ . '/../src/Cita.php';
     $cita3 = new Cita('Meli','It Crowd','Funciones','que parametros tomar');
     
     $listaCitas = array($cita1,$cita2,$cita3);
-
 ?>
