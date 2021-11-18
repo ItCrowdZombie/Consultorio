@@ -10,6 +10,8 @@
 <body>
 <h1>Lista de citas</h1>
 <?php
+
+
 require_once '/xampp/htdocs/Consultorio/src/cita.php';
 require_once '/xampp/htdocs/Consultorio/src/citaList.php';
 foreach ($listaCitas as $cita) {
@@ -18,8 +20,8 @@ foreach ($listaCitas as $cita) {
           <div class='card-body'>
             <h5 class='card-title'>{$cita->getUsuario()}</h5>
             <p class='card-text'>{$cita->getEquipo()}</p>
-            <a href='#' class='btn btn-primary'>{$cita->getConsulta()}</a>
-            <a href='#' class='btn btn-danger'>{$cita->getDescripcion()}</a>
+            <a href='#' class='btn btn-primary'>Delete</a>
+            <a href='#' class='btn btn-danger'>Modify</a>
           </div>
         </div>
         </section>";
