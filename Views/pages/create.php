@@ -8,31 +8,26 @@
     <title>Consultorio</title>
 </head>
 <body>
-<form class="row g-3">
+<form class="row g-3" action = "form.php" method = "$_POST">
   
 <div class="col-md-6">
     <label for="inputName" class="form-label">Nombre y Apellidos</label>
-    <input type="text" class="form-control" id="inputName">
+    <input type="text" class="form-control" id="inputName" name="inputName"require>
 </div>
 
 <div class="col-md-4">
     <label for="inputEquipo" class="form-label">Equipo</label>
-    <select id="inputEquipo" class="form-select">
-      <option selected>Elige...</option>
-      <option>Equipo1</option>
-      <option>Equipo2</option>
-      <option>Equipo3</option>
-    </select>
+    <input type="text" class="form-control" id="inputEquipo" name="inputEquipo" require>
 </div>
 
 <div class="col-md-6">
     <label for="inputTema" class="form-label">Tema de la consulta</label>
-    <input type="text" class="form-control" id="inputTema">
+    <input type="text" class="form-control" id="inputTema" name="inputTema" require>
 </div>
 
 <div class="col-12">
     <label for="inputAddress" class="form-label">Describe tu consulta</label>
-    <input type="text" class="form-control" id="inputAddress" style="height: 100px">
+    <input type="text" class="form-control" id="inputDescription" name="inputDescription" style="height: 100px" require>
   </div>
 
 </form>
