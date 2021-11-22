@@ -1,0 +1,17 @@
+{
+    "name": "ritas/consultorio",
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SolaRita",
+            "email": "ritasolacanals@gmail.com"
+        }
+    ]
+}
