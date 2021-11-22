@@ -8,7 +8,7 @@
     <title>Consultorio</title>
 </head>
 <body>
-    <form class="row g-3" action = "/" method = "POST">
+    <form class="row g-3" action = "/list" method = "POST">
         <div class="col-md-6">
             <label for="inputName" class="form-label">Nombre y Apellidos</label>
             <input type="text" class="form-control" id="inputName" name="inputName"require>
@@ -27,8 +27,8 @@
         </div>
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>
-            <!-- <button id="cancel" type="submit" class="btn btn-warning">Cancelar y volver</button>
-            <button id="delete" type="reset" class="btn btn-danger">Borrar</button> -->
+            <button id="cancel" type="submit" class="btn btn-warning">Cancelar y volver</button>
+            <button id="delete" type="reset" class="btn btn-danger">Borrar</button>
         </section>
     </form>  
 </body>

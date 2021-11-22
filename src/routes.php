@@ -4,14 +4,14 @@
 $uri = $_SERVER["REQUEST_URI"];
 
 if ($uri == '/list'){
-     require_once __DIR__ . '/../src/views/pages/citaList.php';
+     require_once __DIR__ . '/../views/pages/citaList.php';
  }
 
-if ($uri == '/list/crear'){
-    require_once __DIR__ . '/../src/views/pages/create.php';
+if ($uri == '/list/create'){
+    require_once __DIR__ . '/../views/pages/create.php';
 }
 
- if ($uri == 'list/modificar'){
-     require_once __DIR__ . '/../src/views/pages/modify';
+ if ($uri == 'list/modify'){
+     require_once __DIR__ . '/../views/pages/modify.php';
  }
 
