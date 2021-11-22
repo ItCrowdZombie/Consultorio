@@ -1,4 +1,7 @@
 <?php
+namespace App\Models;
+use App\Core\Database;
+
 class Cita {
     private string $usuario;
     private string $equipo;

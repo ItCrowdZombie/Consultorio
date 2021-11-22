@@ -1,5 +1,6 @@
 <?php
-
+namespace App;
+use App\controllers\CitaController;
 
 $uri = $_SERVER["REQUEST_URI"];
 
