@@ -10,9 +10,9 @@
 <body>
 <h1>Lista de citas</h1>
 <?php
-use 
-foreach ($listaCitas as $cita) {
-  require_once __DIR__ . '/../componentes/card.php';
+use App\Models\Cita;
+foreach ($citas as $cita) {
+  require __DIR__ . '/../componentes/card.php';
 };
 ?>
 <button>Create new ticket</button>

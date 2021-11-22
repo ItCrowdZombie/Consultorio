@@ -6,21 +6,24 @@ class Database
     private $citas = [
         [
             'id'=>1,
+            'usuario'=>'Lucas',
             'equipo'=>'It Crowd',
             'consulta'=>'Consulta de PHP',
-            'descripcion'=>'estamos aprendiendo PHP'
+            'description'=>'estamos aprendiendo PHP'
         ],
         [
             'id'=>2,
+            'usuario'=>'Rita',
             'equipo'=>'It Crowd',
             'consulta'=>'Consulta MVC',
-            'descripcion'=>'estamos aprendiendo MVC',
+            'description'=>'estamos aprendiendo MVC',
         ],
         [
             'id'=>3,
+            'usuario'=>'Carmen',
             'equipo'=>'It Crowd',
             'consulta'=>'Consulta de SOLID',
-            'descripcion'=>'estamos aprendiendo SOLID'
+            'description'=>'estamos aprendiendo SOLID'
         ]
     ];
 
