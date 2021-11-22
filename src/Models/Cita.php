@@ -7,12 +7,14 @@ class Cita {
     private string $equipo;
     private string $consulta;
     private string $descripción;
+    private $db;
     public function __construct($usuario,$equipo,$consulta,$descripción)
     {
         $this->usuario = $usuario;
         $this->equipo = $equipo;
         $this->consulta = $consulta;
         $this->descripción = $descripción;
+        $this->db = new Database();
     }   
 
     public function getUsuario(){
@@ -42,6 +44,13 @@ class Cita {
 
     public function setDescripcion($value){
         $this->descripción = $value;
+    }
+
+    public function all(){
+        $listCitas = [];
+        foreach($this->db->getAll() as $cita){
+
+        }
     }
 }
 
