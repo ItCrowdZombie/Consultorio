@@ -22,16 +22,8 @@ $cita = new Cita($nombre,$equipo,$tema,$description);
 array_push($listaCitas, $cita);
 
 foreach ($listaCitas as $cita) {
-  echo "<section id='SectionCitas' class='row justify-content-center'>
-        <div class='card w-50'>
-          <div class='card-body'>
-            <h5 class='card-title'>{$cita->getUsuario()}</h5>
-            <p class='card-text'>{$cita->getEquipo()}</p>
-            <a href='#' class='btn btn-primary'>Delete</a>
-            <a href='#' class='btn btn-danger'>Modify</a>
-          </div>
-        </div>
-        </section>";
+
+  require_once __DIR__ . '/../componentes/card.php';
 };
 ?>
 
