@@ -1,7 +1,7 @@
 <?php
 namespace App\Core;
 
-class Database
+class FakeCitaRepository implements ICitaRepository
 {
     private $citas = [
         [

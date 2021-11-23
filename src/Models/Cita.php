@@ -1,6 +1,8 @@
 <?php
 namespace App\Models;
-use App\Core\Database;
+use App\Core\FakeCitaRepository;
+use App\Core\SQLCitaRepository;
+use App\Core\ICitaRepository;
 
 class Cita {
     public ?int $id = null;
@@ -8,7 +10,7 @@ class Cita {
     public string $equipo;
     public string $consulta;
     public string $descripción;
-    private $db;
+    private ICitaRepository $db;
     public function __construct($data = null)
     {
         if ($data) {
@@ -18,7 +20,7 @@ class Cita {
         $this->consulta = $data['consulta'];
         $this->description = $data['description'];
         }
-        $this->db = new Database();
+        $this->db = new SQLCitaRepository();
     }   
 
     public function all(){
