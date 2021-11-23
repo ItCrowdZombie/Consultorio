@@ -6,7 +6,7 @@ use App\Core\SQLConexion;
 $uri = $_SERVER["REQUEST_URI"];
 
 
-//if ($uri == '/list'){
+if ($uri == '/list'){
      
     $controller = new CitaController();
     $controller->index();

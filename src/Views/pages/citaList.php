@@ -13,7 +13,7 @@
 use App\Models\Cita;
 foreach ($citas as $cita) {
   require __DIR__ . '/../componentes/card.php';
-};
+}
 ?>
 <button>Create new ticket</button>
     
