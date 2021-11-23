@@ -4,6 +4,9 @@ use PDO;
 use PDOException;
 
 class SQLConexion {
+
+    public $mysql;
+
     public function __construct()
     {
         $host="localhost";
@@ -11,8 +14,8 @@ class SQLConexion {
         $pass="root";
         $database="lista_citas";
         $charset="utf-8";
-        $options = [PDO::ATTR_DEFAULT_FECTH_MODE => PDO::FETCH_ASSOC];
-        $pdo = new PDO ("mysql:host={$host};dbname={$database};charset{$charset};$user;$pass;$options;"); 
+        $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
+        $this->mysql = new PDO ("mysql:host={$host};dbname={$database};charset{$charset};$user;$pass;$options;"); 
     }
     
 }
