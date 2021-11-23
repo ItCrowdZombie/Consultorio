@@ -2,6 +2,7 @@
 namespace App;
 use App\controllers\CitaController;
 use App\Models\Cita;
+use App\Core\SQLConexion;
 
 require_once __DIR__ . '/Controllers/CitaController.php';
 
