@@ -1,7 +1,7 @@
 <?php
 namespace App\Core;
 class SQLCitaRepository implements ICitaRepository {
-    private $table = `citas`; //verificar nombre tabla que no está claro//
+    private $table = 'citas'; 
     private $conexion;
     function __construct()
     {
@@ -9,7 +9,7 @@ class SQLCitaRepository implements ICitaRepository {
     }
     function getAll(){
 
-        $query = $this->conexion->query("select * FROM {$this->table}");
+        $query = $this->conexion->query("SELECT * FROM {$this->table}");
         $result = $query->fetchAll();
         return($result);
 

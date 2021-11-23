@@ -11,6 +11,7 @@
 <h1>Lista de citas</h1>
 <?php
 use App\Models\Cita;
+
 foreach ($citas as $cita) {
   require __DIR__ . '/../componentes/card.php';
 }
