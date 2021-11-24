@@ -10,20 +10,20 @@
 <body>
     <form class="row g-3" action = "/list" method = "POST">
         <div class="col-md-6">
-            <label for="inputName" class="form-label">Nombre y Apellidos</label>
-            <input type="text" class="form-control" id="inputName" name="inputName"require>
+            <label for="usuario" class="form-label">Nombre y Apellidos</label>
+            <input type="text" class="form-control" id="inputName" name="usuario"require>
         </div>
         <div class="col-md-4">
-            <label for="inputEquipo" class="form-label">Equipo</label>
-            <input type="text" class="form-control" id="inputEquipo" name="inputEquipo" require>
+            <label for="equipo" class="form-label">Equipo</label>
+            <input type="text" class="form-control" id="inputEquipo" name="equipo" require>
         </div>
         <div class="col-md-6">
-            <label for="inputTema" class="form-label">Tema de la consulta</label>
-            <input type="text" class="form-control" id="inputTema" name="inputTema" require>
+            <label for="consulta" class="form-label">Tema de la consulta</label>
+            <input type="text" class="form-control" id="inputTema" name="consulta" require>
         </div>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Describe tu consulta</label>
-            <input type="text" class="form-control" id="inputDescription" name="inputDescription" style="height: 100px" require>
+            <label for="description" class="form-label">Describe tu consulta</label>
+            <input type="text" class="form-control" id="inputDescription" name="description" style="height: 100px" require>
         </div>
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>

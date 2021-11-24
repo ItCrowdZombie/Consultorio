@@ -13,6 +13,10 @@ class CitaController {
         require_once __DIR__ . '/../views/pages/create.php';
     }
 
+    public function store($request){
+        $citaToSave = new Cita($request);
+        echo $citaToSave->save();
+        }
 
 }
 

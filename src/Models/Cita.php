@@ -9,12 +9,13 @@ class Cita {
     public string $usuario;
     public string $equipo;
     public string $consulta;
-    public string $descripción;
+    public string $description;
     private ICitaRepository $db;
+
     public function __construct($data = null)
     {
         if ($data) {
-        $this->id = $data['id'];
+        $this->id = isset($data['id']) ? $data['id'] : null;
         $this->usuario = $data['usuario'];
         $this->equipo = $data['equipo'];
         $this->consulta = $data['consulta'];
@@ -29,6 +30,10 @@ class Cita {
             array_push($listCitas,new self($cita));
         }
         return $listCitas;
+    }
+
+    public function save(){
+        $this->db->save($this->usuario, $this->equipo, $this->consulta, $this->description);
     }
 }
 

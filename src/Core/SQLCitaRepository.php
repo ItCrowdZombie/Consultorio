@@ -12,6 +12,9 @@ class SQLCitaRepository implements ICitaRepository {
         $query = $this->conexion->query("SELECT * FROM {$this->table}");
         $result = $query->fetchAll();
         return($result);
+    }
 
+    function save($usuario, $equipo, $consulta, $description){
+        $this->conexion->query("INSERT INTO `{$this->table}` (`usuario`,`equipo`, `consulta`, `description`) VALUES ('{$usuario}','{$equipo}','{$consulta}','{$description}')");
     }
 }
