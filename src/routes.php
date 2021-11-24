@@ -13,11 +13,11 @@ if($_POST){
 $uri = $_SERVER["REQUEST_URI"];
 
 
-// if ($uri == '/list'){
+if ($uri == '/list'){
      
 
-//     $controller->index();
-//  }
+   $controller->index();
+  }
 
 if ($uri == '/list/create'){
     
