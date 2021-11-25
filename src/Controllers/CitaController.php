@@ -15,6 +15,12 @@ class CitaController {
         require_once __DIR__ . '/../views/pages/create.php';
     }
 
+    public function viewPageModify() {
+        require_once __DIR__ . '/../views/pages/modify.php';
+    }
+
+
+
     public function store($request){
         $citaToSave = new Cita($request);
         echo $citaToSave->save();
@@ -28,11 +34,16 @@ class CitaController {
 
     }
 
-    public function modify ($request){
-        $citaToUpdate = (new Cita())-> getCita($request);
-        var_dump($citaToUpdate);
-        require_once __DIR__ . '/../Views/pages/modify.php';
+    public function displayCitaData($request){
+        $citaToDisplay = (new Cita())->getCita($request);
+        require_once __DIR__ . '/../views/pages/modify.php';
+    
+    }
 
+    public function update($request){
+        $citaToUpdate= new Cita($request);
+        $citaToUpdate-> update();
+        //$this->redirect('/list');
     }
 
     private function redirect(string $url)  {

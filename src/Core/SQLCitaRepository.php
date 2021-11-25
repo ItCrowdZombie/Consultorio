@@ -23,8 +23,12 @@ class SQLCitaRepository implements ICitaRepository {
     }
 
     function getCitaById ($id) {
-      $query =  $this->conexion->query("SELECT * FROM {$this->table} WHERE `id` = {$id} ");
-      $result = $query->fetchAll();
+      $query =  $this->conexion->query("SELECT * FROM {$this->table} WHERE `id`={$id}");
+      $result = $query->fetch();
       return($result);
+    }
+
+    function dbUpDate($usuario,$equipo,$consulta,$description,$id){
+        $this->conexion->query("UPDATE {$this->table} SET `usuario`='{$usuario}', `equipo`='{$equipo}',`consulta`='{$consulta}',`description`='{$description}' WHERE `id`={$id}");
     }
 }

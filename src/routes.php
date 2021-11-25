@@ -7,6 +7,9 @@ use App\Core\SQLConexion;
 // var_dump($_POST);
 $controller = new CitaController();
 if($_POST){
+   if(isset($data['id'])){
+      $controller->update($_POST);
+   }
     $controller->store($_POST);
 }
 
@@ -20,6 +23,10 @@ if ($uri == '/list/create'){
    $controller->create();
 }
 
+if ($uri == '/list/modify'){
+   $controller->viewPageModify();
+}
+
 
 if($_GET){
    if ($_GET["action"]=="delete"){
@@ -28,7 +35,7 @@ if($_GET){
       
    }
    if ($_GET["action"]=="modify"){
-      $controller->modify($_GET);
+      $controller->displayCitaData($_GET);
    }
 }
 
