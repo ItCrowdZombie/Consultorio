@@ -12,19 +12,23 @@ if($_POST){
 
 $uri = $_SERVER["REQUEST_URI"];
 
-
 if ($uri == '/list'){
-     
-
    $controller->index();
   }
 
 if ($uri == '/list/create'){
-    
    $controller->create();
 }
+
+
+if($_GET){
+   if ($_GET["action"]=="delete"){
+      $controller->citaDelete($_GET);
+      $controller->index();
+   }}
+   
+
 
 //  if ($uri == 'list/modify'){
 //      require_once __DIR__ . '/../views/pages/modify.php';
 //  }
-

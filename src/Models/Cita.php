@@ -6,10 +6,10 @@ use App\Core\ICitaRepository;
 
 class Cita {
     public ?int $id = null;
-    public string $usuario;
-    public string $equipo;
-    public string $consulta;
-    public string $description;
+    public $usuario;
+    public $equipo;
+    public $consulta;
+    public $description;
     private ICitaRepository $db;
 
     public function __construct($data = null)

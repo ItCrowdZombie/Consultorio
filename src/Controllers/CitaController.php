@@ -1,5 +1,7 @@
 <?php
 namespace App\Controllers;
+
+use App\Core\SQLCitaRepository;
 use App\Models\Cita;
 
 class CitaController {
@@ -18,6 +20,13 @@ class CitaController {
         echo $citaToSave->save();
         }
 
+    public function citaDelete ($request){
+        $citaToDelete = new SQLCitaRepository();
+        $citaToDelete -> dbdelete ($request['id']);
+    }
+
 }
+
+
 
 
