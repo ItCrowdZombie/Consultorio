@@ -25,9 +25,13 @@ if($_GET){
    if ($_GET["action"]=="delete"){
       
       $controller->delete($_GET);
-      $controller->index();
+      
    }
 }
+
+
+
+
    
 
 

@@ -18,12 +18,18 @@ class CitaController {
     public function store($request){
         $citaToSave = new Cita($request);
         echo $citaToSave->save();
+        $this->redirect('/list');
         }
 
     public function delete ($request){
         $citaToDelete = new Cita();
         $citaToDelete -> citaDelete ($request);
-        
+        $this->redirect('/list');
+
+    }
+
+    private function redirect(string $url)  {
+        header( "Location: {$url}");
     }
 
 }
