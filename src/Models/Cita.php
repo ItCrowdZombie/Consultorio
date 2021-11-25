@@ -40,6 +40,14 @@ class Cita {
         $this->db->dbdelete($request['id']);
         
     }
+
+    public function getCita($request){
+       $cita = $this->db->getCitaById($request['id']);
+       $citaToModify = [new self($cita)];
+       return $citaToModify;
+        
+
+    }
 }
 
 

@@ -27,7 +27,11 @@ if($_GET){
       $controller->delete($_GET);
       
    }
+   if ($_GET["action"]=="modify"){
+      $controller->modify($_GET);
+   }
 }
+
 
 
 

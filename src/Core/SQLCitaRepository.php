@@ -21,4 +21,10 @@ class SQLCitaRepository implements ICitaRepository {
     function dbdelete ($id){
         $this->conexion->query("DELETE FROM `{$this->table}` WHERE  `{$this->table}`.`id` ={$id}");
     }
+
+    function getCitaById ($id) {
+      $query =  $this->conexion->query("SELECT * FROM {$this->table} WHERE `id` = {$id} ");
+      $result = $query->fetchAll();
+      return($result);
+    }
 }
