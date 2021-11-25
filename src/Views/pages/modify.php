@@ -8,28 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <form class="row g-3" action = "/list" method = "POST">
+    <form class="row g-3" action = "/" method = "POST">
         <div class="col-md-6">
             <label for="usuario" class="form-label">Nombre y Apellidos</label>
             <input type="text" class="form-control" id="inputName" name="usuario" value="
             <?php 
             use App\Models\Cita; 
-            echo "{$citaToUpdate->usuario}";?>">
+            echo "{$citaToDisplay->usuario}";?>">
         </div>
         <div class="col-md-4">
             <label for="equipo" class="form-label">Equipo</label>
-            <input type="text" class="form-control" id="inputEquipo" name="equipo"  value="<?php echo "{$citaToUpdate->equipo}"; ?>">
+            <input type="text" class="form-control" id="inputEquipo" name="equipo"  value="<?php echo "{$citaToDisplay->equipo}"; ?>">
         </div>
         <div class="col-md-6">
             <label for="consulta" class="form-label">Tema de la consulta</label>
-            <input type="text" class="form-control" id="inputTema" name="consulta"  value="<?php echo "{$citaToUpdate->consulta}"; ?>">
+            <input type="text" class="form-control" id="inputTema" name="consulta"  value="<?php echo "{$citaToDisplay->consulta}"; ?>">
         </div>
         <div class="col-12">
             <label for="description" class="form-label">Describe tu consulta</label>
-            <input type="text" class="form-control" id="inputDescription" name="description" style="height: 100px"  value="<?php echo "{$citaToUpdate->description}"; ?>">
+            <input type="text" class="form-control" id="inputDescription" name="description" style="height: 100px"  value="<?php echo "{$citaToDisplay->description}"; ?>">
         </div>
         <div>
-            <input type="hidden"  id="id" name="id"  value="<?php echo "{$citaToUpdate->id}"; ?>">  
+            <input type="hidden"  id="id" name="id"  value="<?php echo "{$citaToDisplay->id}"; ?>">  
         </div>
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>

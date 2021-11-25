@@ -43,7 +43,7 @@ class CitaController {
     public function update($request){
         $citaToUpdate= new Cita($request);
         $citaToUpdate-> update();
-        //$this->redirect('/list');
+        $this->redirect('/list');
     }
 
     private function redirect(string $url)  {

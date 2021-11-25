@@ -42,7 +42,7 @@ class Cita {
     }
 
     public function update(){
-        $this-> db -> dbUpDate($this->usuario, $this->equipo, $this->consulta, $this->description);
+        $this-> db -> dbUpDate($this->usuario, $this->equipo, $this->consulta, $this->description , $this->id);
     }
 
     public function getCita($request){

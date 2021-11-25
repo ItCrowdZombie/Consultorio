@@ -7,10 +7,11 @@ use App\Core\SQLConexion;
 // var_dump($_POST);
 $controller = new CitaController();
 if($_POST){
-   if(isset($data['id'])){
+   if(isset($_POST['id'])){
       $controller->update($_POST);
-   }
-    $controller->store($_POST);
+   }else{ 
+      $controller->store($_POST); 
+   };
 }
 
 $uri = $_SERVER["REQUEST_URI"];
