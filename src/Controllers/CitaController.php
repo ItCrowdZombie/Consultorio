@@ -20,9 +20,10 @@ class CitaController {
         echo $citaToSave->save();
         }
 
-    public function citaDelete ($request){
-        $citaToDelete = new SQLCitaRepository();
-        $citaToDelete -> dbdelete ($request['id']);
+    public function delete ($request){
+        $citaToDelete = new Cita();
+        $citaToDelete -> citaDelete ($request);
+        
     }
 
 }

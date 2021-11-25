@@ -35,6 +35,11 @@ class Cita {
     public function save(){
         $this->db->save($this->usuario, $this->equipo, $this->consulta, $this->description);
     }
+
+    public function citaDelete($request){
+        $this->db->dbdelete($request['id']);
+        
+    }
 }
 
 

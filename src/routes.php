@@ -23,9 +23,11 @@ if ($uri == '/list/create'){
 
 if($_GET){
    if ($_GET["action"]=="delete"){
-      $controller->citaDelete($_GET);
+      
+      $controller->delete($_GET);
       $controller->index();
-   }}
+   }
+}
    
 
 
