@@ -24,7 +24,7 @@ class SQLCitaRepository implements ICitaRepository {
 
     function getCitaById ($id) {
       $query =  $this->conexion->query("SELECT * FROM {$this->table} WHERE `id` = {$id} ");
-      $result = $query->fetchAll();
+      $result = $query->fetch();
       return($result);
     }
 }

@@ -11,19 +11,19 @@
 <form class="row g-3" action = "/list" method = "POST">
         <div class="col-md-6">
             <label for="usuario" class="form-label">Nombre y Apellidos</label>
-            <input type="text" class="form-control" id="inputName" name="usuario" require value= "<?php $citaToUpdate->usuario ?>">
+            <input type="text" class="form-control" id="inputName" name="usuario" require value= "<?php echo "{$citaToUpdate->usuario}" ?>">
         </div>
         <div class="col-md-4">
             <label for="equipo" class="form-label">Equipo</label>
-            <input type="text" class="form-control" id="inputEquipo" name="equipo" require value= "<?php $citaToUpdate->equipo ?>">
+            <input type="text" class="form-control" id="inputEquipo" name="equipo" require value= "<?php echo "{$citaToUpdate->equipo}" ?>">
         </div>
         <div class="col-md-6">
             <label for="consulta" class="form-label">Tema de la consulta</label>
-            <input type="text" class="form-control" id="inputTema" name="consulta" require value= "<?php $citaToUpdate->consulta ?>">
+            <input type="text" class="form-control" id="inputTema" name="consulta" require value= "<?php echo "{$citaToUpdate->consulta}" ?>">
         </div>
         <div class="col-12">
             <label for="description" class="form-label">Describe tu consulta</label>
-            <input type="text" class="form-control" id="inputDescription" name="description" style="height: 100px" require value= "<?php $citaToUpdate->description ?>">
+            <input type="text" class="form-control" id="inputDescription" name="description" style="height: 100px" require value= "<?php echo "{$citaToUpdate->description}" ?>">
         </div>
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>

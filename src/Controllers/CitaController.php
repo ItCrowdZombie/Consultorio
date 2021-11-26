@@ -30,9 +30,7 @@ class CitaController {
 
     public function modify ($request){
         $citaToUpdate = (new Cita())-> getCita($request);
-        var_dump($citaToUpdate);
         require_once __DIR__ . '/../Views/pages/modify.php';
-
     }
 
     private function redirect(string $url)  {
