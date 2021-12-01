@@ -16,6 +16,7 @@ class Cita {
     {
         if ($data) {
         $this->id = isset($data['id']) ? $data['id'] : null;
+        $this->created_at = isset($data['created_at']) ? $data['created_at'] : null;
         $this->usuario = $data['usuario'];
         $this->equipo = $data['equipo'];
         $this->consulta = $data['consulta'];
