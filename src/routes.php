@@ -4,9 +4,9 @@ use App\controllers\CitaController;
 use App\Models\Cita;
 use App\Core\SQLConexion;
 
-// var_dump($_POST);
 $controller = new CitaController();
 if($_POST){
+   
    if(isset($_POST['id'])){
       $controller->update($_POST);
    }else{ 

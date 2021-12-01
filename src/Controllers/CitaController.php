@@ -37,6 +37,7 @@ class CitaController {
     public function displayCitaData($request){
         $citaToDisplay = (new Cita())->getCita($request);
         require_once __DIR__ . '/../views/pages/modify.php';
+        var_dump($request);
     
     }
 
@@ -44,9 +45,10 @@ class CitaController {
         $citaToUpdate= new Cita($request);
         $citaToUpdate-> update();
         $this->redirect('/list');
+        
     }
 
-    private function redirect(string $url)  {
+    private function redirect(string $url){
         header( "Location: {$url}");
     }
 

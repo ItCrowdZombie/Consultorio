@@ -8,7 +8,7 @@
     <title>Consultorio</title>
 </head>
 <body>
-    <form class="row g-3" action = "/list" method = "POST">
+    <form class="row g-3" action = "/" method = "POST">
         <div class="col-md-6">
             <label for="usuario" class="form-label">Nombre y Apellidos</label>
             <input type="text" class="form-control" id="inputName" name="usuario"require>
