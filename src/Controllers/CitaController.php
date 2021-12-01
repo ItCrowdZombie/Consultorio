@@ -28,6 +28,11 @@ class CitaController {
 
     }
 
+    public function update($request){
+        $citaToUpdate = new Cita();
+        $citaToUpdate -> citaUpdate($request);
+    }
+
     public function modify ($request){
         $citaToUpdate = (new Cita())-> getCita($request);
         require_once __DIR__ . '/../Views/pages/modify.php';

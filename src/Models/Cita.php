@@ -41,6 +41,10 @@ class Cita {
         
     }
 
+    public function citaUpdate($request){
+        $this->db->dbUpdate($this->usuario, $this->equipo, $this->consulta, $this->description);
+    }
+
     public function getCita($request){
        $cita = $this->db->getCitaById($request['id']);
        $citaToModify = new self($cita);
