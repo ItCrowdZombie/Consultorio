@@ -8,7 +8,7 @@ var_dump($_POST);
 
 $controller = new CitaController();
 if($_POST){
-   if(!isset($data['id'])){
+   if(!isset($_POST['id'])){
       $controller->store($_POST);
    }else{
       $controller->update($_POST);
