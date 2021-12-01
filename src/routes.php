@@ -10,6 +10,7 @@ if($_POST){
    if($_POST['id']==null){
       $controller->store($_POST);
    }else{
+      
       $controller->update($_POST['id']);
    }
 }

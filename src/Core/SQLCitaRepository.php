@@ -27,4 +27,8 @@ class SQLCitaRepository implements ICitaRepository {
       $result = $query->fetch();
       return($result);
     }
+
+    function dbUpdate ($usuario, $equipo, $consulta, $description, $id){
+        $this->conexion->query("UPDATE `{$this->table}`  SET `usuario`='{$usuario}',`equipo`='{$equipo}',`consulta`='{$consulta}',`description`='{$description}' WHERE `id` ={$id} ");
+    }
 }
