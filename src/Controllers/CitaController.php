@@ -29,8 +29,9 @@ class CitaController {
     }
 
     public function update($request){
-        $citaToUpdate = new Cita();
-        $citaToUpdate -> citaUpdate($request);
+        $citaToUpdate = new Cita($request);
+        $citaToUpdate -> citaUpdate();
+        $this->redirect('/list');
     }
 
     public function modify ($request){
