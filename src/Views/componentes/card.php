@@ -5,6 +5,7 @@ echo "<section id='SectionCitas' class='row justify-content-center'>
           <div class='card-body'>
             <h5 class='card-title'>{$cita->usuario}</h5>
             <p class='card-text'>{$cita->consulta}</p>
+            <p class='card-text'>{$cita->created_at}</p>
             <a href='?action=delete&id={$cita->id}' class='btn btn-primary'>Delete</a>
             <a href='?action=modify&id={$cita->id}'class='btn btn-danger'>Modify</a>
           </div>
