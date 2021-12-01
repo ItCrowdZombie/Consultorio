@@ -25,6 +25,7 @@
             <label for="description" class="form-label">Describe tu consulta</label>
             <input type="text" class="form-control" id="inputDescription" name="description" style="height: 100px" require value= "<?php echo "{$citaToUpdate->description}" ?>">
         </div>
+        <input type="hidden" id="inputId" name="id" require value= "<?php echo "{$citaToUpdate->id}" ?>">
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>
             <button id="cancel" type="submit" class="btn btn-warning">Cancelar y volver</button>
