@@ -16,7 +16,8 @@ foreach ($citas as $cita) {
   require __DIR__ . '/../componentes/card.php';
 }
 ?>
-<button>Create new ticket</button>
+
+<a href='http://localhost/list/create' class='btn btn-primary'>Create new ticket</a>
     
 </body>
 </html>
