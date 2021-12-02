@@ -21,7 +21,7 @@
 
 ### Requisitos Funcionales🚗:
     
-# La aplicación constará de al menos 3 páginas
+####La aplicación constará de al menos 3 páginas
     
     * Una página para la lista con todas las citas previstas.
     * Una página con un formulario para crear una nueva cita.
