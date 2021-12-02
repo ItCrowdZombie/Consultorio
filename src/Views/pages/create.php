@@ -11,19 +11,19 @@
     <form class="row g-3" action = "/list" method = "POST">
         <div class="col-md-6">
             <label for="usuario" class="form-label">Nombre y Apellidos</label>
-            <input type="text" class="form-control" id="inputName" name="usuario"require>
+            <input type="text" class="form-control" id="inputName" name="usuario"required>
         </div>
         <div class="col-md-4">
             <label for="equipo" class="form-label">Equipo</label>
-            <input type="text" class="form-control" id="inputEquipo" name="equipo" require>
+            <input type="text" class="form-control" id="inputEquipo" name="equipo" required>
         </div>
         <div class="col-md-6">
             <label for="consulta" class="form-label">Tema de la consulta</label>
-            <input type="text" class="form-control" id="inputTema" name="consulta" require>
+            <input type="text" class="form-control" id="inputTema" name="consulta" required>
         </div>
         <div class="col-12">
             <label for="description" class="form-label">Describe tu consulta</label>
-            <input type="text" class="form-control" id="inputDescription" name="description" style="height: 100px" require>
+            <input type="text" class="form-control" id="inputDescription" name="description" style="height: 100px" required>
         </div>
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>
