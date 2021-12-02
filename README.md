@@ -18,7 +18,7 @@
 * Comenzar con composer y autoload
 * Una intro al *router* como componente de los frameworks MVC
 
-## Requisitos Funcionales🚗:
+## Requisitos Funcionales🚗
     
 **La aplicación constará de al menos 3 páginas**
     
@@ -26,10 +26,11 @@
 * Una página con un formulario para crear una nueva cita.
 * Una página para editar una cita concreta.
     
-## Páginas🎨:
+## Páginas🎨
 
-**Lista: Las citas deben aparecer por orden de creación con:**
+**Lista:**
 
+* Las citas deben aparecer por orden de creación
 * El nombre del coder o del equipo.
 * El tema de consulta
 * Fecha y hora de la creación de la cita
@@ -49,9 +50,8 @@
 * Los campos deben tener la información de la cita a editar
 *  Botón cancelar, Botón de enviar
     
-## La aplicación deberá ser responsiva.
+## Requisitos Técnicos🧵
     
-**Requisitos Técnicos**
 * Aplicación de tipo CRUD (Create, Read, Update, Delete)
 * Deberá ser Orientada a objetos con el patrón MVC
 * Deberá estar en un servidor gratuito en producción.
@@ -78,7 +78,6 @@ Abre la terminal y ejecuta: git clone para descargar el proyecto.
 
 
 ## Construido con 🛠️
-
 * HTML
 * BOOTSTRAP
 * PHP
