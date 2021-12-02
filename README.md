@@ -26,9 +26,10 @@
 * Una página con un formulario para crear una nueva cita.
 * Una página para editar una cita concreta.
     
-**Páginas**
+##Páginas🎨:
 
-** Lista: Las citas deben aparecer por orden de creación con:
+** Lista: Las citas deben aparecer por orden de creación con:**
+
 * El nombre del coder o del equipo.
 * El tema de consulta
 * Fecha y hora de la creación de la cita
