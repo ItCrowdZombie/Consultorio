@@ -27,7 +27,7 @@
         </div>
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>
-            <button id="cancel" type="submit" class="btn btn-warning">Cancelar y volver</button>
+            <a href='/list' class="btn btn-warning">Cancelar y volver</a>
             <button id="delete" type="reset" class="btn btn-danger">Borrar</button>
         </section>
     </form>  
