@@ -3,7 +3,8 @@
 ## Introducción 🍀
 
 
-> 
+> Nos encontramos en una empresa de desarrollo y necesitamos una aplicación que permita pedir cita al CTO para resolver problemas técnicos de los equipos de desarrollo.
+De momento vamos a desarrollar un producto mínimo viable (MVP). Empezaremos con un código espagueti, en PHP e intentaremos llegar a una aplicación orientada a objetos usando el patrón MVC (Modelo, Vista, Controlador).
 
 > El proyecto se debe realizar en equipos Scrum en 3 sprints de 1 semana.
 >
