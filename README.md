@@ -35,12 +35,16 @@
 * Fecha y hora de la creación de la cita
 * Las citas se podrán eliminar.
 * Podremos acceder a la edición de cada cita, y a la página de creación de una cita nueva.
+
 **Crear nueva cita:**
+
 * Formulario con los campos necesarios obligatorios
 * Botón para borrar los campos
 * Botón para cancelar y volver a la lista principal
 * Botón para enviar la información
+
 **Editar cita**
+
 * Formulario con los campos necesarios obligatorios.
 * Los campos deben tener la información de la cita a editar
 *  Botón cancelar, Botón de enviar
@@ -55,9 +59,11 @@
 * El repositorio debe contener un Readme con explicación del proyecto, y una explicación de cómo instalar o ejecutar la aplicación.
     
 
-## Extras:
-* Incluir una funcionalidad para que el usuario pueda añadir y quitar coders en el frontend.✔
-* Incluir un sistema de persistencia para mantener a los coders sacrificados inactivos. Usando: LocalStorage.✔
+## Extras🎊
+* Añadir tests unitarios con PhpUnit.❌
+* Añadir una API REST Paralela al HTML❌
+* Subir la aplicación a producción en Heroku❌
+* Hacer un boton para recuperar los datos borrados en la vista "modify"✔
 
 ## Roles🎯
 * Scrum master: Melisa Manoni
