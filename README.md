@@ -35,12 +35,12 @@
 * Fecha y hora de la creación de la cita
 * Las citas se podrán eliminar.
 * Podremos acceder a la edición de cada cita, y a la página de creación de una cita nueva.
-** Crear nueva cita:
+**Crear nueva cita:**
 * Formulario con los campos necesarios obligatorios
 * Botón para borrar los campos
 * Botón para cancelar y volver a la lista principal
 * Botón para enviar la información
-** Editar cita
+**Editar cita**
 * Formulario con los campos necesarios obligatorios.
 * Los campos deben tener la información de la cita a editar
 *  Botón cancelar, Botón de enviar
