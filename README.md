@@ -1,5 +1,4 @@
 # Consultorio
-# ZombieWheel
 
 ## Introducción 🍀
 
@@ -19,33 +18,33 @@
 * Comenzar con composer y autoload
 * Una intro al *router* como componente de los frameworks MVC
 
-### Requisitos Funcionales🚗:
+## Requisitos Funcionales🚗:
     
-####La aplicación constará de al menos 3 páginas
+###La aplicación constará de al menos 3 páginas
     
-    * Una página para la lista con todas las citas previstas.
-    * Una página con un formulario para crear una nueva cita.
-    * Una página para editar una cita concreta.
+* Una página para la lista con todas las citas previstas.
+* Una página con un formulario para crear una nueva cita.
+* Una página para editar una cita concreta.
     
-# Páginas
+## Páginas
+
+** Lista: Las citas deben aparecer por orden de creación con:
+* El nombre del coder o del equipo.
+* El tema de consulta
+* Fecha y hora de la creación de la cita
+* Las citas se podrán eliminar.
+* Podremos acceder a la edición de cada cita, y a la página de creación de una cita nueva.
+** Crear nueva cita:
+* Formulario con los campos necesarios obligatorios
+* Botón para borrar los campos
+* Botón para cancelar y volver a la lista principal
+* Botón para enviar la información
+** Editar cita
+* Formulario con los campos necesarios obligatorios.
+* Los campos deben tener la información de la cita a editar
+*  Botón cancelar, Botón de enviar
     
-    ** Lista: Las citas deben aparecer por orden de creación con:
-        * El nombre del coder o del equipo.
-        * El tema de consulta
-        * Fecha y hora de la creación de la cita
-        * Las citas se podrán eliminar.
-        * Podremos acceder a la edición de cada cita, y a la página de creación de una cita nueva.
-    ** Crear nueva cita:
-        * Formulario con los campos necesarios obligatorios
-        * Botón para borrar los campos
-        * Botón para cancelar y volver a la lista principal
-        * Botón para enviar la información
-    ** Editar cita
-        * Formulario con los campos necesarios obligatorios.
-        * Los campos deben tener la información de la cita a editar
-        *  Botón cancelar, Botón de enviar
-    
- # La aplicación deberá ser responsiva.
+## La aplicación deberá ser responsiva.
     
 **Requisitos Técnicos**
 * Aplicación de tipo CRUD (Create, Read, Update, Delete)
@@ -83,4 +82,4 @@ Abre la terminal y ejecuta: git clone para descargar el proyecto.
 ## Gratitud 🎁
 * Comenta a otros sobre este proyecto 📢 .
 * Apoya mis proyectos 🤓 .
-* ⌨️ con ❤️ por Lucas Rodríguez, Facundo Ramallo, Melisa Manoni, Sergi Fuentes, Clàudia Calero y Rita Solà. 
+* ⌨️ con ❤️ por Lucas Rodríguez, Facundo Ramallo, Melisa Manoni, Sergi Fuentes, Carmen Rubio y Rita Solà. 
