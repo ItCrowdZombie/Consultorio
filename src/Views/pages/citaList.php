@@ -9,6 +9,7 @@
 </head>
 <body>
 <h1>Lista de citas</h1>
+<a href='/list/create' class='btn btn-primary'>Create new ticket</a>
 <?php
 use App\Models\Cita;
 
@@ -17,7 +18,7 @@ foreach ($citas as $cita) {
 }
 ?>
 
-<a href='http://localhost/list/create' class='btn btn-primary'>Create new ticket</a>
+
     
 </body>
 </html>
