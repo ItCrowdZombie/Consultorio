@@ -77,6 +77,10 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 https://github.com/ItCrowdZombie/Consultorio
 Abre la terminal y ejecuta: git clone para descargar el proyecto.
 
+## Link en producción 👓
+Este link te permitirá ver el producto finalizado: http://localhost/list
+Es importante que tengas el servidor y el MySQL activado. 
+
 
 ## Construido con 🛠️
 * HTML
