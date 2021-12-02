@@ -36,7 +36,7 @@
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>
             <a href='/list' class="btn btn-warning">Cancelar y volver</a>
             <a href="?action=clear&id=<?php echo "{$citaToUpdate->id}" ?>&created_at=<?php echo "{$citaToUpdate->created_at}"?>" id="delete" class="btn btn-danger">Borrar</a>
-            <button id="remove" type="reset" class="btn btn-primary">Reset</button>
+            <a href="?action=modify&id=<?php echo "{$citaToUpdate->id}" ?>" class="btn btn-primary">Reset</a>
         </section>
     </form>  
 </body>
