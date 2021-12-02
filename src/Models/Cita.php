@@ -49,9 +49,9 @@ class Cita {
     public function getCita($request){
        $cita = $this->db->getCitaById($request['id']);
        $citaToModify = new self($cita);
-       return $citaToModify;
-        
+       return $citaToModify;   
     }
+
 }
 
 

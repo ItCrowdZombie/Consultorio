@@ -28,11 +28,14 @@
         <div>
             <input type="hidden" id="inputId" name="id" required value= "<?php echo "{$citaToUpdate->id}" ?>">
         </div>
+        <div>
+            <input type="hidden" id="inputCreated_at" name="created_at" required value= "<?php echo "{$citaToUpdate->created_at}" ?>">
+        </div>
        
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>
             <a href='/list' class="btn btn-warning">Cancelar y volver</a>
-            <button id="delete" type="reset" class="btn btn-danger">Borrar</button>
+            <a href="?action=clear&id=<?php echo "{$citaToUpdate->id}" ?>&created_at=<?php echo "{$citaToUpdate->created_at}"?>" id="delete" class="btn btn-danger">Borrar</a>
         </section>
     </form>  
 </body>

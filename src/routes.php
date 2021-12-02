@@ -23,7 +23,6 @@ if ($uri == '/list/create'){
    $controller->create();
 }
 
-
 if($_GET){
    if ($_GET["action"]=="delete"){
       
@@ -32,6 +31,9 @@ if($_GET){
    }
    if ($_GET["action"]=="modify"){
       $controller->modify($_GET);
+   }
+   if($_GET["action"]=="clear"){
+      $controller->clear($_GET['id'],$_GET['created_at']);
    }
 }
 

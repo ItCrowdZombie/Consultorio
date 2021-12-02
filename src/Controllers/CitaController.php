@@ -43,6 +43,12 @@ class CitaController {
         header( "Location: {$url}");
     }
 
+    public function clear($id, $created_at){
+        $data=['id'=>$id,'created_at'=>$created_at,'usuario'=>'','equipo'=>'','consulta'=>'','description'=>''];
+        $citaToUpdate = new Cita($data);
+        require_once __DIR__ . '/../Views/pages/modify.php';
+    }
+
 }
 
 
