@@ -31,6 +31,7 @@
        
         <section class="text-left">
             <button id="send" type="submit" class="btn btn-primary">Enviar</button>
+            <a href='/list' class="btn btn-warning">Cancelar y volver</a>
             <button id="delete" type="reset" class="btn btn-danger">Borrar</button>
         </section>
     </form>  
